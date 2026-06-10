@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 // import { Fragment } from 'react';
 
+// Using Chatgpt to help with JavaScript 
 
 const App = () => {
 
@@ -120,8 +121,12 @@ return (
 
 
         <button type='submit'>
-            send
-        </button>           
+            Sign Up
+        </button> 
+        <button type="reset">
+            Reset
+        </button> 
+                   
     </form>
     </>
 
