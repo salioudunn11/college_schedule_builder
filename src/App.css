@@ -1,3 +1,40 @@
+        <style>
+
+            table, th, td {
+                border: 5px solid rgb(38, 10, 219);
+                border-collapse: collapse;
+            }
+
+            th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 3px solid rgb(175, 200, 33);
+            }
+
+            table {
+                width: 100%;
+            }
+
+            th {
+                height: 50px;
+                background-color: darkblue;
+            }
+
+            td {
+                height: 40px;
+                vertical-align: middle;
+            }
+
+            tr:hover {
+                background-color: rgb(255, 226, 6);
+            }
+
+            h1, h2 {
+                text-align: center;
+            }
+        </style>
+
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

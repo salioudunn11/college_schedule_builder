@@ -18,15 +18,7 @@ return (
     <h1>College Schedule Builder</h1>
     <p>It's time to build your schedule.</p>
 
-{
-  courses.map((courseItem, index) => (
-    <div key={index}>
-      <p>{courseItem.course}</p>
-      <p>{courseItem.day}</p>
-      <p>{courseItem.startTime} - {courseItem.endTime}</p>
-    </div>
-  ))
-}
+
   
     <form onSubmit={(event) => {
       event.preventDefault();
@@ -120,14 +112,42 @@ return (
         </select>
 
 
+
         <button type='submit'>
             Sign Up
         </button> 
         <button type="reset">
             Reset
         </button> 
-                   
+ 
     </form>
+        <table>
+            <caption><b><h2 id="course">Your Course Schedule</h2></b></caption>
+
+            <tr>
+                <th>Course</th>
+                <th>Day</th>
+                <th>Starting Time</th>
+                <th>Ending Time</th>
+            </tr>
+        {
+  courses.map((courseItem, index) => (
+    /*<div key={index}>
+      <p>{courseItem.course} - {courseItem.day} - {courseItem.startTime} - {courseItem.endTime}</p>
+    </div>*/
+            <tr key={index}>
+                <td>{courseItem.course}</td>
+                <td>{courseItem.day}</td>
+                <td>{courseItem.startTime}</td>
+                <td>{courseItem.endTime}</td>
+            </tr>
+  ))
+}   
+
+
+
+
+        </table>
     </>
 
 )
@@ -137,6 +157,7 @@ return (
 
 
 }
+
 
 
 export default App;
